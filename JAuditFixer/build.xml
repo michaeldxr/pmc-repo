@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="JarJAuditFixer" default="compile" basedir=".">
+	<description>use to generate jar package</description>
+	<property name="src" value="src" />
+	<property name="classes" value="classes" />
+	<property name="resources" value="resources"/>
+
+
+	<pathconvert property="libs" pathsep=" ">
+		
+		<mapper>
+			
+			<chainedmapper>
+				
+				<flattenmapper />
+				
+				<globmapper from="*" to="libs/*" />
+			</chainedmapper>
+		</mapper>
+		<fileset dir="libs">
+			<include name="*.jar" />
+		</fileset>
+	</pathconvert>
+	
+	<pathconvert property="config" pathsep=" ">
+		
+		<mapper>
+			
+			<chainedmapper>
+				
+				<flattenmapper />
+				
+				<globmapper from="*" to="src/oracle/apps/di/config/*" />
+			</chainedmapper>
+		</mapper>
+		<fileset dir="src/oracle/apps/di/config/">
+			<include name="*.properties" />
+			<include name="*.xml"/>
+		</fileset>
+	</pathconvert>
+	
+	<pathconvert property="exemptions" pathsep=" ">
+		
+		<mapper>
+			
+			<chainedmapper>
+				
+				<flattenmapper />
+				
+				<globmapper from="*" to="src/oracle/apps/exemptions/*" />
+			</chainedmapper>
+		</mapper>
+		<fileset dir="src/oracle/apps/exemptions/">
+			<include name="*.txt" />
+			<include name="*.csv"/>
+			<include name="*.zip"/>
+		</fileset>
+	</pathconvert>
+
+	<property name="deplibs" value="${libs} ${config} ${exemptions}" />
+
+	<echo>libs   ${libs}</echo>
+	<target name="init">
+		
+		<mkdir dir="${classes}" />
+	</target>
+
+	<target name="compile" depends="init" description="comile target">
+				<javac srcdir="${src}" destdir="${classes}" includeantruntime="true">
+			<classpath>
+				<fileset dir="libs">
+					<include name="*.jar" />
+				</fileset>
+				<fileset dir="src/oracle/apps/exemptions/">
+					<include name="*.txt" />
+					<include name="*.csv"/>
+					<include name="*.zip"/>
+				</fileset>
+				<fileset dir="src/oracle/apps/di/config/">
+					<include name="*.properties" />
+					<include name="*.xml"/>
+				</fileset>
+				
+			</classpath>
+		</javac>
+	</target>
+
+	<tstamp />
+
+		<property name="jarfilename" value="${ant.project.name}-${DSTAMP}${TSTAMP}.jar" />
+	<target name="jar" depends="compile" description="make jar file">
+		<jar jarfile="${jarfilename}" >
+			 <fileset dir="${classes}"/>
+			 <fileset dir="${resources}"/>	
+		</jar>
+	</target>
+
+		<target name="run" depends="jar">
+		<java jar="${jarfilename}" fork="true">
+		</java>
+	</target>
+
+
+	<target name="clean">
+			<delete dir="${classes}" />
+		<delete dir="." includes="${ant.project.name}*.jar" />
+	</target>
+</project>
+
