@@ -1,0 +1,15 @@
+# Format of this file is :
+# FilePath##SubIssue##Linenumber##LineText
+
+
+# Reason for exemption: 
+# 1. VO will never be used in a UI. 
+# 2. clearing only the user defined where which does not have binds. Will never cause a sql exeption
+# 3. VO always has a default view criteria with some binds never causing a blind query. 
+fusionapps/prj/components/projectsFinancials/foundation/projectDefinition/publicModel/src/oracle/apps/projects/foundation/projectDefinition/publicModel/applicationModule/StructureAMImpl.java##ActivationError##7097##taskVO.setWhereClause(null);
+
+# Reason for exemption:
+# method: applyWhereClauseToDelivery is called after the clear where clause. The  method does an execute query.
+fusionapps/scm/components/logistics/wsh/shipConfirm/deliveries/uiModel/src/oracle/apps/scm/shipping/shipConfirm/deliveries/uiModel/applicationModule/DeliveryAMImpl.java##ActivationError##630##processDeliveryVOImpl.setWhereClause(null);
+fusionapps/scm/components/logistics/wsh/shipConfirm/deliveries/uiModel/src/oracle/apps/scm/shipping/shipConfirm/deliveries/uiModel/applicationModule/DeliveryAMImpl.java##ActivationError##631##processDeliveryVOImpl.setWhereClauseParams(null);
+

@@ -1,0 +1,6 @@
+.jws
+components/[a-zA-Z]*/.adf/META-INF/
+components/[a-zA-Z]*/src/META-INF/
+SuperWeb/
+SuperEss/
+/db/sql/datafix/.*sql

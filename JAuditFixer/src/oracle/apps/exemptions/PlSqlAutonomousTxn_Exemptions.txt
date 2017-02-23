@@ -1,0 +1,6 @@
+#fileName##SubIssue##ProcedureName##Reason
+fa_xla_cmp_accounting_pkg.pkb##LogicBlock##Compile##Excluded by zeesha before hand. Only generates the package defs. Does not do any DML ops.
+fa_xla_cmp_accounting_pkg.pkb##ExceptionBlock##Compile##Excluded by zeesha before hand. Only generates the package defs. Does not do any DML ops.
+wie_mat_txn_util_grp.pkb##LogicBlock##derive_materials##Bug 19046301
+wie_wo_op_txn_pvt.pkb##LogicBlock##INVOKE_OSP_POST_OP_COMPL##Bug22062245
+wie_wo_op_txn_pvt.pkb##ExceptionBlock##INVOKE_OSP_POST_OP_COMPL##Bug22062245

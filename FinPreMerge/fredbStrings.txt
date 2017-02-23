@@ -1,0 +1,7 @@
+# This file contains the database connection details for diffirent series in the format:
+# series_name = hostname:port:sid
+# series name should not end with .rdd and should not contain label info
+
+FUSIONAPPS_PT.R9ERP_LINUX.X64 = slcac735.us.oracle.com:1537:cdrdrup/systempass:manager/fusionpass:fusion
+
+

@@ -1,0 +1,589 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<jpr:project xmlns:jpr="http://xmlns.oracle.com/ide/project">
+   <hash n="component-versions">
+      <value n="oracle.adfdt.controller.adfc.source.migration.AdfControllerSchemaMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.adfdt.controller.common.migrator.ProjectMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.adfdt.controller.jsf2.diagram.migrate.JsfNodeMigratorHelper" v="11.1.1.1.0"/>
+      <value n="oracle.adfdt.controller.struts.addin.db.ADFStrutsProjectMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.adfdt.controller.struts.addin.StrutsProjectMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.adfdtinternal.dvt.datapresdt.migration.DVTDataMapMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.adfdtinternal.model.ide.migration.ProjectMigrator" v="11.1.1.1.0.11.1.1"/>
+      <value n="oracle.adfdtinternal.model.ide.security.wizard.FormPageMigrator" v="11.1.1.0.0"/>
+      <value n="oracle.adfdtinternal.model.ide.security.wizard.JpsFilterMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.adfdtinternal.model.ide.xmled.migration.ADFNodeMigrator" v="11.1.1.1.0.5"/>
+      <value n="oracle.adfdtinternal.model.ide.xmled.migration.PageDefinitionParameterValueMigrator" v="11.1.1.1.0.5"/>
+      <value n="oracle.adfdtinternal.model.ide.xmled.migration.WebXmlMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.adfdtinternal.view.common.migration.wizards.MigrationHelper" v="11.1.1.1.0.3"/>
+      <value n="oracle.adfdtinternal.view.rich.binding.migration.JarResourceMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.adfdtinternal.view.rich.migration.ComponentIdNodeMigratorHelper" v="11.1.1.1.0.01"/>
+      <value n="oracle.adfdtinternal.view.rich.migration.LibraryVersionMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.bm.commonIde.ProjectUpgrader" v="11.1.1.1.0"/>
+      <value n="oracle.bm.migration.project.MigratorRegistryProjectUpgradeAdapter" v="11.1.1.1.0"/>
+      <value n="oracle.ide.model.Project" v="11.1.1.1.0"/>
+      <value n="oracle.ide.model.ResourcePathsMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.jbo.dt.jclient.migrator.JCProjectMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.jbo.dt.jdevx.deployment.JbdProjectMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.jbo.dt.jdevx.ui.appnav.APProjectMigrator" v="11.1.1.0.1.5"/>
+      <value n="oracle.jbo.dt.migrate.ResourceBundlePathMigrator" v="11.1.1.1.0.5"/>
+      <value n="oracle.jbo.dt.migration.ServiceInterfaceMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.jdeveloper.ejb.EjbMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.jdeveloper.library.ProjectLibraryMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.jdeveloper.model.OutputDirectoryMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.jdevimpl.deploy.DeploymentProfilesMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.jdevimpl.deploy.jps.JpsDataMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.jdevimpl.jsp.JspMigrator" v="11.1.1"/>
+      <value n="oracle.jdevimpl.offlinedb.migration.OfflineDBProjectMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.jdevimpl.offlinedb.migration.OfflineTransferMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.jdevimpl.resourcebundle.XliffAddin$XliffMigratorHelper" v="11.1.1.1.0"/>
+      <value n="oracle.jdevimpl.webapp.jsp.libraries.JspLibraryMigrator" v="11.1.1.1.4"/>
+      <value n="oracle.jdevimpl.webapp.WebAppContentSetNodeMigratorHelper" v="11.1.1"/>
+      <value n="oracle.jdevimpl.webapp.WebAppNodeMigratorHelper" v="11.1.1.1.0"/>
+      <value n="oracle.jdevimpl.webservices.WebServicesMigratorHelper" v="11.1.1.1.0"/>
+      <value n="oracle.jdevimpl.xml.wl.WeblogicMigratorHelper" v="11.1.1.1.0"/>
+      <value n="oracle.modeler.bmmigrate.management.Migration" v="11.1.1.1.0"/>
+      <value n="oracle.tip.tools.ide.bpel.v1.designer.addin.migrator.BPELProjectMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.tip.tools.ide.fabric.addin.SCAProjectMigrator" v="11.1.1.1.0.06"/>
+      <value n="oracle.tip.tools.ide.pm.addin.migrator.PMProjectMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.tip.tools.ide.workflow.addin.TaskFormMigratorAddin" v="11.1.1.1.0"/>
+      <value n="oracle.tip.tools.ide.workflow.addin.WorkflowProjectMigrator" v="11.1.1.1.0.08;11.1.1.1.0.09;11.1.1.1.0.10"/>
+      <value n="oracle.toplink.workbench.addin.migration.PersistenceProjectMigrator" v="11.1.1.1.1"/>
+      <value n="oracle.toplink.workbench.addin.migration.TopLinkProjectMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.webcenter.internal.dt.migration.WebCenterProjectMigrator" v="11.1.1.1.0.090618.1120;11.1.1.2.0.100216.2200;11.1.1.4.0.100820.0800;11.1.1.4.0.100903.0800;11.1.1.4.0.101019.0800"/>
+   </hash>
+   <list n="contentSets">
+      <string v="oracle.jdeveloper.model.PathsConfiguration/javaContentSet"/>
+      <string v="oracle.ide.model.ResourcePaths/resourcesContentSet"/>
+      <string v="oracle.jdeveloper.offlinedb.model.OfflineDBProjectSettings/offlineDBContentSet"/>
+      <string v="oracle.jdeveloper.model.J2eeSettings/webContentSet"/>
+      <string v="oracle.bm.commonIde.data.project.ModelerProjectSettings/modelersContentSet"/>
+      <string v="oracle.mds.internal.dt.ide.MDSLibraryCustCSProvider/mdsContentSet"/>
+      <string v="oracle.toplink.workbench.addin/toplinkContentSet"/>
+      <string v="oracle.adfdtinternal.model.ide.settings.ADFMSettings/adfmContentSet"/>
+      <string v="oracle.adfnmc.core.contentset.NmcContentSetProvider/nmcContentSet"/>
+      <string v="oracle.tip.tools.ide.fabric.addin.SCAContentSetProvider/sca-content"/>
+      <string v="oracle.bpm.fusion.repository.BPMProjectSettings/bpmProjectsProcessesContentSet"/>
+      <string v="oracle.bpm.fusion.repository.BPMProjectSettings/bpmProjectsOrganizationContentSet"/>
+      <string v="oracle.mds.internal.dt.ide.MDSADFLibVirtualNodeCSProvider/mdsLibVirtualNodeContentSet"/>
+      <string v="oracle.tip.tools.ide.ess.addin.ESSContentSetProvider/ess-content"/>
+   </list>
+   <value n="defaultPackage" v="oracle.apps"/>
+   <hash n="oracle.ide.model.ResourcePaths">
+      <hash n="resourcesContentSet">
+         <list n="pattern-filters">
+            <string v="-results.xlsx"/>
+            <string v="-lovresults.xml"/>
+            <string v="-FetchSizes_scan.csv"/>
+            <string v="-error.log.lck"/>
+            <string v="-error.log"/>
+            <string v="+*"/>
+         </list>
+         <list n="url-path">
+            <url path="."/>
+         </list>
+      </hash>
+   </hash>
+   <hash n="oracle.jdeveloper.compiler.OjcConfiguration">
+      <value n="internalEncoding" v="UTF-8"/>
+      <list n="Javac.commandline.optionlist">
+         <string v="-g"/>
+         <string v="-Xlint:all"/>
+         <string v="-Xlint:-cast"/>
+         <string v="-Xlint:-empty"/>
+         <string v="-Xlint:-fallthrough"/>
+         <string v="-Xlint:-path"/>
+         <string v="-Xlint:-serial"/>
+         <string v="-Xlint:-unchecked"/>
+      </list>
+   </hash>
+   <hash n="oracle.jdeveloper.deploy.dt.DeploymentProfiles">
+      <hash n="profileDefinitions">
+         <hash n="auditFixer">
+            <hash n="archiveOptions">
+               <value n="hasManifest" v="true"/>
+            </hash>
+            <hash n="fileGroups">
+               <list n="groups">
+                  <hash>
+                     <list n="contributors">
+                        <hash>
+                           <value n="type" v="2"/>
+                        </hash>
+                        <hash>
+                           <value n="type" v="7"/>
+                        </hash>
+                     </list>
+                     <value n="displayName" v="Project Output"/>
+                     <hash n="filters">
+                        <list n="rules"/>
+                     </hash>
+                     <value n="internalName" v="project-output"/>
+                     <value n="type" v="1"/>
+                  </hash>
+               </list>
+            </hash>
+            <url n="jarURL" protocol="file" path="/projects/scans/deploy/auditFixer.jar"/>
+            <hash n="libraryDependencies">
+               <value n="IncludeLibrariesFromOtherContainers" v="true"/>
+            </hash>
+            <value n="profileClass" v="oracle.jdeveloper.deploy.jar.ArchiveProfile"/>
+            <value n="profileName" v="auditFixer"/>
+         </hash>
+         <hash n="JarJAuditFixer">
+            <hash n="archiveOptions">
+               <value n="hasManifest" v="true"/>
+            </hash>
+            <hash n="fileGroups">
+               <list n="groups">
+                  <hash>
+                     <list n="contributors">
+                        <hash>
+                           <value n="type" v="2"/>
+                        </hash>
+                        <hash>
+                           <value n="type" v="7"/>
+                        </hash>
+                     </list>
+                     <value n="displayName" v="Project Output"/>
+                     <hash n="filters">
+                        <list n="rules"/>
+                     </hash>
+                     <value n="internalName" v="project-output"/>
+                     <value n="type" v="1"/>
+                  </hash>
+               </list>
+            </hash>
+            <url n="jarURL" path="../../lib/JarJAuditFixer.jar"/>
+            <hash n="libraryDependencies">
+               <value n="IncludeLibrariesFromOtherContainers" v="true"/>
+            </hash>
+            <value n="profileClass" v="oracle.jdeveloper.deploy.jar.ArchiveProfile"/>
+            <value n="profileName" v="JarJAuditFixer"/>
+         </hash>
+      </hash>
+      <list n="profileList">
+         <string v="JarJAuditFixer"/>
+         <string v="auditFixer"/>
+      </list>
+   </hash>
+   <hash n="oracle.jdeveloper.model.J2eeSettings">
+      <value n="j2eeWebAppName" v="SpreadsheetHelper-JAuditFixer-webapp"/>
+      <value n="j2eeWebContextRoot" v="SpreadsheetHelper-JAuditFixer-context-root"/>
+   </hash>
+   <hash n="oracle.jdeveloper.runner.RunConfigurations">
+      <hash n="runConfigurationDefinitions">
+         <hash n="AddLibraryRefs">
+            <value n="custom" v="false"/>
+            <value n="name" v="AddLibraryRefs"/>
+            <value n="programArguments" v="/home/sudgupta/view_storage/sudgupta_jpr_script_view/fusionapps/fin/components/receivables/ar/receipts/shared/ui false ui fusionapps/jlib/AdfFinUiUtilPublicUi.jar"/>
+         </hash>
+         <hash n="ALI">
+            <value n="custom" v="false"/>
+            <value n="javaOptions" v=""/>
+            <value n="name" v="ALI"/>
+            <value n="programArguments" v="/home/zcurrimb/view_storage/zcurrimb_com_latest2/fusionapps/fin/components/ledger/gl/journals/allocations/publicModel/src/oracle/apps/financials/generalLedger/journals/allocations/publicModel/execution/ false"/>
+         </hash>
+         <hash n="AR">
+            <value n="custom" v="false"/>
+            <value n="javaOptions" v="-Xmx2048m"/>
+            <value n="name" v="AR"/>
+            <value n="programArguments" v="/ade_autofs/ade_fusion_linux/FUSIONAPPS_PT.FINM6B_LINUX.rdd/LATEST/fusionapps/fin/components/receivables/ar /scratch/albowicz/tmp/voAttrs.xlsx false"/>
+            <url n="targetURL" path="src/oracle/apps/psr/PassivationPatternsFinder.java"/>
+         </hash>
+         <hash n="AuditProfileUpdate">
+            <value n="custom" v="false"/>
+            <value n="javaOptions" v=""/>
+            <value n="name" v="AuditProfileUpdate"/>
+            <value n="programArguments" v=""/>
+            <url n="targetURL" path="src/oracle/apps/psr/AuditProfileUpdate.java"/>
+         </hash>
+         <hash n="AutomateVOTuning">
+            <value n="custom" v="false"/>
+            <value n="javaOptions" v="-DfixLOVOnlyIfMaxExceeded=true "/>
+            <value n="name" v="AutomateVOTuning"/>
+            <value n="programArguments" v="/scratch/zcurrimb/view_storage/zcurrimb_main_ind/fusionapps/prc/components/procurement/poz/ true false"/>
+         </hash>
+         <hash n="bc4jAnalyzer">
+            <value n="custom" v="false"/>
+            <value n="name" v="bc4jAnalyzer"/>
+            <value n="programArguments" v="/scratch/zcurrimb/view_storage/zcurrimb_adfdije/fusionapps/fin/components/"/>
+         </hash>
+         <hash n="BIPPermission">
+            <value n="custom" v="false"/>
+            <value n="javaOptions" v="-Xms1024m -Xmx2048m -DfilterByList_not=/scratch/zcurrimb/MyFiles/MyUtilProjects/AutomatedScanners/seedScan/rup3_listOfSeedFiles.txt -DdumpToAB=false -DabFamily=ALL -DabTable=CODESCAN_RESULTS2"/>
+            <value n="name" v="BIPPermission"/>
+            <value n="programArguments" v="/scratch/zhaowa/view_storage/zhaowa_neilscan/fatools/opensource/jauditFixScripts/bin/bip_scans/finBIPermissionsALL.csv FUSIONAPPS_PT.R9ERP_LINUX.X64"/>
+            <url n="targetURL" path="src/oracle/apps/VONullIDFinder.java"/>
+         </hash>
+         <hash n="BoldStyleClass">
+            <value n="custom" v="false"/>
+            <value n="javaOptions" v="-Xms512m -Xmx1024m "/>
+            <value n="name" v="BoldStyleClass"/>
+            <value n="programArguments" v="/ade_autofs/ade_fusion_linux/FUSIONAPPS_11.1.1.5.1_LINUX.X64.rdd/LATEST/fusionapps/fin/components/receivables/ar/ /var/www/html/posts/style/bold_styles.xlsx false"/>
+         </hash>
+         <hash n="ButtonMismatchFixer">
+            <value n="custom" v="false"/>
+            <value n="name" v="ButtonMismatchFixer"/>
+            <value n="programArguments" v="/ade/sudgupta_finm6_nov9_view/fusionapps/fin/components/ledger"/>
+         </hash>
+         <hash n="cdFinder">
+            <value n="custom" v="false"/>
+            <value n="javaOptions" v="-Xmx2047m"/>
+            <value n="name" v="cdFinder"/>
+            <value n="programArguments" v="/ade_autofs/ade_fusion_linux/FUSIONAPPS_11.1.1.5.1_LINUX.X64.rdd/130217.1800.S/fusionapps/ false"/>
+            <url n="targetURL" path="src/oracle/apps/ImmediateContentDeliveryFinder.java"/>
+         </hash>
+         <hash n="ComboboxFixer">
+            <value n="custom" v="false"/>
+            <value n="javaOptions" v="-DstripeOnRunDir=true"/>
+            <value n="name" v="ComboboxFixer"/>
+            <value n="programArguments" v="/ade_autofs/ade_fusion_linux/FUSIONAPPS_PT.FINM6b.rdd/LATEST/fusionapps/fin/components/ledger /home/zcurrimb/WidthFixes_Mass.csv false"/>
+         </hash>
+         <hash n="ComboboxWidthScanner">
+            <value n="custom" v="false"/>
+            <value n="javaOptions" v="-DstartFromModel=true"/>
+            <value n="name" v="ComboboxWidthScanner"/>
+            <value n="programArguments" v="/ade_autofs/ade_fusion_linux/FUSIONAPPS_PT.FINM6B_LINUX.rdd/LATEST/fusionapps/fin/components/financialsEss fin cummulative"/>
+         </hash>
+         <hash n="CRM">
+            <value n="custom" v="false"/>
+            <value n="name" v="CRM"/>
+            <value n="programArguments" v="/ade_autofs/ade_fusion_linux/FUSIONAPPS_PT.CRMPRMM6B_LINUX.rdd/LATEST/fusionapps/crm/components/crmCommon/ false"/>
+         </hash>
+         <hash n="DIChecker">
+            <value n="custom" v="false"/>
+            <value n="javaOptions" v="-Xms1024m -Xmx2048m -DdumpToAB=false -DabFamily=ALL -DabTable=CODESCAN_RESULTS2"/>
+            <value n="name" v="DIChecker"/>
+            <value n="programArguments" v="/ade_autofs/ade_fusion_linux/FUSIONAPPS_PT.V1RUP4DEV_LINUX.X64.rdd/LATEST/fusionapps/fin/components/payables/ap/invoices /ade_autofs/ade_fusion_linux/FATOOLS_MAIN_LINUX.rdd/LATEST/fatools/opensource/jauditFixScripts/JAuditFixer/src/oracle/apps/di/config/Rules.xml"/>
+         </hash>
+         <hash n="ELHelpProv">
+            <value n="custom" v="false"/>
+            <value n="name" v="ELHelpProv"/>
+            <value n="programArguments" v="/ade_autofs/ade_fusion_linux/FUSIONAPPS_PT.FINM6B_LINUX.rdd/LATEST/fusionapps/fin/components/ledger"/>
+         </hash>
+         <hash n="EnumPattern">
+            <value n="custom" v="false"/>
+            <value n="javaOptions" v="-Xms1024m -Xmx2048m -DfilterByList_not=/scratch/zcurrimb/MyFiles/MyUtilProjects/AutomatedScanners/seedScan/rup3_listOfSeedFiles.txt -DdumpToAB=false -DabFamily=ALL -DabTable=CODESCAN_RESULTS2"/>
+            <value n="name" v="EnumPattern"/>
+            <value n="programArguments" v="FUSIONAPPS_PT.INTERPFIN_LINUX.X64"/>
+            <url n="targetURL" path="src/oracle/apps/fixer/EnumTransformer4LRG.java"/>
+         </hash>
+         <hash n="EXM">
+            <value n="custom" v="false"/>
+            <value n="name" v="EXM"/>
+            <value n="programArguments" v="/scratch/albowicz/view_storage/albowicz_finm6b/fusionapps/fin/components/payables/exm/creditCard/setup/model false"/>
+         </hash>
+         <hash n="FindPassivationPatterns">
+            <value n="custom" v="false"/>
+            <value n="javaOptions" v="-Xms512M -Xmx1024M"/>
+            <value n="name" v="FindPassivationPatterns"/>
+            <value n="programArguments" v="/ade_autofs/ade_fusion_linux/FUSIONAPPS_PT.FINM6B_LINUX.rdd/LATEST/fusionapps/fin/components /scratch/sudgupta/Desktop/passivation.xlsx false "/>
+         </hash>
+         <hash n="GL for Pers">
+            <value n="custom" v="false"/>
+            <value n="name" v="GL for Pers"/>
+            <value n="programArguments" v="/ade_autofs/ade_fusion_linux/FUSIONAPPS_PT.FINM6B_LINUX.rdd/LATEST/fusionapps/fin/components/ledger/gl/inquiry/analysis/ui/public_html/oracle/apps/financials/generalLedger/inquiry/analysis/ui/page/UserPreferences.jsff false"/>
+         </hash>
+         <hash n="HA">
+            <value n="custom" v="false"/>
+            <value n="name" v="HA"/>
+            <value n="programArguments" v="/scratch/zcurrimb/view_storage/zcurrimb_com_tuning/fusionapps/fin/components/receivables/ar/transactions/shared/ui /scratch/zcurrimb/beans.xlsx false"/>
+         </hash>
+         <hash n="HardCodedEnglishString">
+            <value n="custom" v="false"/>
+            <value n="javaOptions" v="-Xms1024m -Xmx2048m -DfilterByList_not=/scratch/zcurrimb/MyFiles/MyUtilProjects/AutomatedScanners/seedScan/rup3_listOfSeedFiles.txt -DdumpToAB=false -DabFamily=ALL -DabTable=CODESCAN_RESULTS2"/>
+            <value n="name" v="HardCodedEnglishString"/>
+            <value n="programArguments" v="/scratch/zhaowa/projects/hardcodeStr/logdir/rptHardStr.csv FUSIONAPPS_11.1.1.5.1_LINUX.X64 HardCodedEnglishStrings"/>
+            <url n="targetURL" path="src/oracle/apps/VONullIDFinder.java"/>
+         </hash>
+         <hash n="InvalidJarRefs">
+            <value n="custom" v="false"/>
+            <value n="name" v="InvalidJarRefs"/>
+            <value n="programArguments" v="/ade_autofs/ade_fusion_linux/FUSIONAPPS_PT.SCMM6B_LINUX.rdd/LATEST/fusionapps/scm/components/advancedPlanning/msp false"/>
+         </hash>
+         <hash n="InvalidRefDBWrapper">
+            <value n="custom" v="false"/>
+            <value n="name" v="InvalidRefDBWrapper"/>
+            <value n="programArguments" v="/scratch/sudgupta/view_storage/sudgupta_fatools_view/fatools/opensource/jauditFixScripts/JAuditFixer prod FIN"/>
+         </hash>
+         <hash n="JarAnalyzer">
+            <value n="custom" v="false"/>
+            <value n="javaOptions" v="-Xmx2048m"/>
+            <value n="name" v="JarAnalyzer"/>
+            <value n="programArguments" v="/ade_autofs/ade_fusion_linux/FSM_MAIN_GENERIC.rdd/110225.1252.S/fsm/ false false"/>
+         </hash>
+         <hash n="Jar Analyzer for ADF Tuning">
+            <value n="custom" v="false"/>
+            <value n="javaOptions" v="-Xms512m -Xmx1024m "/>
+            <value n="name" v="Jar Analyzer for ADF Tuning"/>
+            <value n="programArguments" v="/ade_autofs/ade_fusion_linux/FUSIONAPPS_11.1.1.5.1_LINUX.X64.rdd/LATEST/fusionapps/jlib/ false"/>
+         </hash>
+         <hash n="JOE_LOVAnalyzer">
+            <value n="custom" v="false"/>
+            <value n="javaOptions" v="-DdoADE=false -Ddebug=false -Xms512m -Xmx1024m"/>
+            <value n="name" v="JOE_LOVAnalyzer"/>
+            <value n="programArguments" v="/scratch/albowicz/view_storage/albowicz_r6/fusionapps/fin/components/"/>
+         </hash>
+         <hash n="LOVAnalyzer">
+            <value n="custom" v="false"/>
+            <value n="javaOptions" v="-DfixViolations=true -DdoADE=false -Ddebug=false -Xms512m -Xmx1024m -DfixMultipleBc=false"/>
+            <value n="name" v="LOVAnalyzer"/>
+            <value n="programArguments" v="/ade_autofs/ade_fusion_linux/FUSIONAPPS_11.1.1.5.1_LINUX.X64.rdd/LATEST/fusionapps/hcm/components/"/>
+         </hash>
+         <hash n="messageScans">
+            <value n="custom" v="false"/>
+            <value n="javaOptions" v=""/>
+            <value n="name" v="messageScans"/>
+            <value n="programArguments" v="/scratch/sadevula/view_storage/sadevula_R13devmain/fusionapps/ FUSIONAPPS_PT.DEVMAIN_LINUX.X64"/>
+            <url n="targetURL" path="src/oracle/apps/votuning_v4/JarAnalyzer.java"/>
+         </hash>
+         <hash n="messageScansDBWrapper">
+            <value n="custom" v="false"/>
+            <value n="javaOptions" v=""/>
+            <value n="name" v="messageScansDBWrapper"/>
+            <value n="programArguments" v="FUSIONAPPS_PT.DEVMAIN_LINUX.X64"/>
+            <url n="targetURL" path="src/oracle/apps/votuning_v4/JarAnalyzer.java"/>
+         </hash>
+         <hash n="NakedWhereClauseAnalyzer">
+            <value n="custom" v="false"/>
+            <value n="name" v="NakedWhereClauseAnalyzer"/>
+            <value n="programArguments" v="/scratch/zcurrimb/view_storage/zcurrimb_adfdije/fusionapps/fin/components/"/>
+         </hash>
+         <hash n="NamingCntSpreadsheetGenerator">
+            <value n="custom" v="false"/>
+            <value n="name" v="NamingCntSpreadsheetGenerator"/>
+            <value n="programArguments" v="/home/zcurrimb/view_storage/zcurrimb_m6b_latest/fusionapps/fin/components/ namingCnt_spreadsheet.xlsx "/>
+         </hash>
+         <hash n="NamingContainerIdFixer">
+            <value n="custom" v="false"/>
+            <value n="name" v="NamingContainerIdFixer"/>
+            <value n="programArguments" v="/home/zcurrimb/view_storage/zcurrimb_m6b_latest/fusionapps/fin/components/ output.csv false"/>
+         </hash>
+         <hash n="NoIdAnalyzer">
+            <value n="custom" v="false"/>
+            <value n="name" v="NoIdAnalyzer"/>
+            <value n="programArguments" v="/home/zcurrimb/view_storage/zcurrimb_m6b_latest/fusionapps/fin/components/ false"/>
+         </hash>
+         <hash n="OutputTextBindingScanner">
+            <value n="custom" v="false"/>
+            <value n="javaOptions" v=""/>
+            <value n="name" v="OutputTextBindingScanner"/>
+            <value n="programArguments" v="/ade_autofs/ade_fusion_linux/FUSIONAPPS_PT.FINM6B_LINUX.rdd/LATEST/fusionapps/fin/components/receivables/ar/receipts/shared"/>
+         </hash>
+         <hash n="ProfileReportParser">
+            <value n="custom" v="false"/>
+            <value n="javaOptions" v=""/>
+            <value n="name" v="ProfileReportParser"/>
+            <value n="programArguments" v=""/>
+            <url n="targetURL" path="src/oracle/apps/premerge/ProfileReportParser.java"/>
+         </hash>
+         <hash n="ReportConfigFixer">
+            <value n="custom" v="false"/>
+            <value n="javaOptions" v="-Ddebug=true -DxpathOptimization=false -DdisableDocCaching=true -DdisableDataModelCaching=true"/>
+            <value n="name" v="ReportConfigFixer"/>
+            <value n="programArguments" v="/ade_autofs/ade_fusion_linux/FUSIONAPPS_PT.FINCOMM6B_LINUX.rdd/LATEST/fusionapps/fin/ true false"/>
+         </hash>
+         <hash n="RowCountAnalyzer">
+            <value n="custom" v="false"/>
+            <value n="name" v="RowCountAnalyzer"/>
+            <value n="programArguments" v="/ade_autofs/ade_fusion_linux/FUSIONAPPS_PT.FINM6B_LINUX.rdd/LATEST/fusionapps/fin/components"/>
+         </hash>
+         <hash n="serializationScanner">
+            <value n="custom" v="false"/>
+            <value n="name" v="serializationScanner"/>
+            <value n="programArguments" v="/ade_autofs/ade_fusion_linux/FUSIONAPPS_PT.SCMM6B_LINUX.rdd/LATEST/fusionapps/scm/components/logistics/rcv"/>
+         </hash>
+         <hash n="SetVOTuning">
+            <value n="custom" v="false"/>
+            <value n="name" v="SetVOTuning"/>
+            <value n="programArguments" v="/home/zcurrimb/view_storage/zcurrimb_com_je_di/fusionapps/fin/components/ledger /home/zcurrimb/vo1.csv false"/>
+         </hash>
+         <hash n="TagFinder">
+            <value n="custom" v="false"/>
+            <value n="javaOptions" v="-Xmx2048m"/>
+            <value n="name" v="TagFinder"/>
+            <value n="programArguments" v="/ade_autofs/ade_fusion_linux/FUSIONAPPS_PT.R7INT_LINUX.X64.rdd/LATEST/fusionapps false"/>
+            <url n="targetURL" path="src/oracle/apps/finder/AFTagFinder.java"/>
+         </hash>
+         <hash n="UICodeScanner">
+            <value n="custom" v="false"/>
+            <value n="name" v="UICodeScanner"/>
+            <value n="programArguments" v="/scratch/sudgupta/view_storage/sudgupta_r12fin_view/fusionapps/fin/components/receivables/ false true"/>
+         </hash>
+         <hash n="votuning_v3">
+            <value n="custom" v="false"/>
+            <value n="javaOptions" v="-Xmx2048m"/>
+            <value n="name" v="votuning_v3"/>
+            <value n="programArguments" v="FUSIONAPPS_PT.INTERPFIN_LINUX.X64_141015.0126.S /scratch/yaoyao/logs /scratch/yaoyao/logs /scratch/yaoyao/view_storage/yaoyao_interpfin/fusionapps/fin scan"/>
+            <url n="targetURL" path="src/oracle/apps/votuning_v4/JarAnalyzer.java"/>
+         </hash>
+         <hash n="ZX">
+            <value n="custom" v="false"/>
+            <value n="name" v="ZX"/>
+            <value n="programArguments" v="/ade_autofs/ade_fusion_linux/FUSIONAPPS_PT.FINM6B_LINUX.rdd/LATEST/fusionapps/fin/components/financialCommon/zx/ false"/>
+         </hash>
+      </hash>
+      <list n="runConfigurationList">
+         <string v="ALI"/>
+         <string v="AR"/>
+         <string v="AddLibraryRefs"/>
+         <string v="AuditProfileUpdate"/>
+         <string v="AutomateVOTuning"/>
+         <string v="BIPPermission"/>
+         <string v="BoldStyleClass"/>
+         <string v="ButtonMismatchFixer"/>
+         <string v="CRM"/>
+         <string v="ComboboxFixer"/>
+         <string v="ComboboxWidthScanner"/>
+         <string v="DIChecker"/>
+         <string v="ELHelpProv"/>
+         <string v="EXM"/>
+         <string v="EnumPattern"/>
+         <string v="FindPassivationPatterns"/>
+         <string v="GL for Pers"/>
+         <string v="HA"/>
+         <string v="HardCodedEnglishString"/>
+         <string v="InvalidJarRefs"/>
+         <string v="InvalidRefDBWrapper"/>
+         <string v="JOE_LOVAnalyzer"/>
+         <string v="Jar Analyzer for ADF Tuning"/>
+         <string v="JarAnalyzer"/>
+         <string v="LOVAnalyzer"/>
+         <string v="NakedWhereClauseAnalyzer"/>
+         <string v="NamingCntSpreadsheetGenerator"/>
+         <string v="NamingContainerIdFixer"/>
+         <string v="NoIdAnalyzer"/>
+         <string v="OutputTextBindingScanner"/>
+         <string v="ProfileReportParser"/>
+         <string v="ReportConfigFixer"/>
+         <string v="RowCountAnalyzer"/>
+         <string v="SetVOTuning"/>
+         <string v="TagFinder"/>
+         <string v="UICodeScanner"/>
+         <string v="ZX"/>
+         <string v="bc4jAnalyzer"/>
+         <string v="cdFinder"/>
+         <string v="messageScans"/>
+         <string v="messageScansDBWrapper"/>
+         <string v="serializationScanner"/>
+         <string v="votuning_v3"/>
+      </list>
+   </hash>
+   <hash n="oracle.jdevimpl.config.JProjectLibraries">
+      <list n="exportedReferences">
+         <hash>
+            <value n="id" v="Oracle XML Parser v2"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="JarSpreadsheetHelper.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Java EE 1.5"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Oracle JDBC"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Exemptions"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Opencsv-2.3.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-io-2.4.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+      </list>
+      <hash n="internalDefinitions">
+         <list n="libraryDefinitions">
+            <hash>
+               <list n="classPath">
+                  <url path="../../lib/JarSpreadsheetHelper.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="JarSpreadsheetHelper.jar"/>
+               <value n="id" v="JarSpreadsheetHelper.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="src/oracle/apps/exemptions/"/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Exemptions"/>
+               <value n="id" v="Exemptions"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../lib/opencsv-2.3.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Opencsv-2.3.jar"/>
+               <value n="id" v="Opencsv-2.3.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../lib/commons-io-2.4.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-io-2.4.jar"/>
+               <value n="id" v="Commons-io-2.4.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+         </list>
+      </hash>
+      <list n="libraryReferences">
+         <hash>
+            <value n="id" v="Oracle XML Parser v2"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="JarSpreadsheetHelper.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Java EE 1.5"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Oracle JDBC"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Exemptions"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Opencsv-2.3.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-io-2.4.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+      </list>
+   </hash>
+   <hash n="oracle.jdevimpl.config.JProjectPaths">
+      <url n="outputDirectory" path="classes/"/>
+   </hash>
+   <hash n="oracle.toplink.workbench.addin">
+      <hash n="toplinkContentSet">
+         <list n="pattern-filters">
+            <string v="+**"/>
+         </list>
+         <list n="url-path">
+            <url path="toplink/"/>
+         </list>
+      </hash>
+   </hash>
+   <hash n="ResourceBundleOptions">
+      <list n="RegisteredResourceBundles"/>
+   </hash>
+</jpr:project>

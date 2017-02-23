@@ -1,0 +1,7 @@
+# This file contains the database sids for diffirent series in the format
+# series_name : envSid
+# series name should not end with .rdd and should not contain label info
+
+FUSIONAPPS_11.1.1.5.1_LINUX.X64 : frer7pm
+
+
