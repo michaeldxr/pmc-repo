@@ -1,0 +1,27 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DIStandards>
+    <Rules>
+        <Rule id="R" shortCode="ADFdi-Resources" Enforced="true">There should be no hardcoded english strings in the workbook</Rule>
+        
+        <Rule id="T_1" shortCode="ADFdi-TableKey" Enforced="true">Table Key Column must be specified</Rule>
+        <Rule id="T_2" shortCode="ADFdi-TableStatusCol" Enforced="true">If Insert/Upload/Delete is used, table must have the required columns</Rule>
+        <Rule id="T_3" shortCode="ADFdi-TableCachedAttr"  Enforced="true">If there are cached attributes, the same attribute must not be present in the column</Rule>
+        <Rule id="T_4" shortCode="ADFdi-TableCommit"  Enforced="false">If your spreadsheet is DML Enabled, CommitBatchActionId must have a AM method to do commit</Rule>
+        <Rule id="T_5" shortCode="ADFdi-LimitBatchSize"  Enforced="false">If your spreadsheet is DML Enabled, LimitBatchSize should be true</Rule>
+        <Rule id="T_6" shortCode="ADFdi-InsertBeforeRowActionID"  Enforced="false">If InsertEnabled is true, InsertBeforeRowActionID should call a method to create a new row</Rule>
+        <Rule id="T_7" shortCode="ADFdi-BatchSizeValue100"  Enforced="false">If your spreadsheet is DML Enabled, BatchSize value should be 100 </Rule>
+        <Rule id="T_8" shortCode="ADFdi-DependentDropdown"  Enforced="false">List of Dependent Dropdowns</Rule>
+        <Rule id="I_1" shortCode="ADFdi-FSM"  Enforced="true">Spreadsheet integration with FSM area must not use portlet parameters</Rule>
+        <Rule id="W_1" shortCode="ADFdi-WbkId"  Enforced="true">Workbook ID Must be unique across all spreadsheets</Rule>
+        <Rule id="B_1" shortCode="ADFdi-Bindings"  Enforced="false">There must be no unused bindings in the associated pagedef</Rule>
+        
+        <Rule id="W_2" shortCode="ADFdi-WrksheetErrors"  Enforced="true">Worksheet must display worksheet errors</Rule>
+        
+        <!--<Rule id="N_1"  shortCode="ADFDi-Naming-EndDT"  Enforced="false">Design Time spreadsheets must end with DT</Rule>
+        <Rule id="N_2"  shortCode="ADFDi-Naming-DiDir"  Enforced="false">Spreadsheets must be present in the directory containing /di/</Rule>
+        <Rule id="N_3"  shortCode="ADFDi-Naming-Src"  Enforced="false">Desing Time spreadsheets must be present in the /src/ folder</Rule>
+        <Rule id="N_4"  shortCode="ADFDi-Naming-published1"  Enforced="false">Published spreadsheets must be present in the /public_html/ folder</Rule>
+        <Rule id="N_5"  shortCode="ADFDi-Naming-published2"  Enforced="false">Published spreadsheets must not end in DT</Rule>-->
+     
+        </Rules>
+</DIStandards>
