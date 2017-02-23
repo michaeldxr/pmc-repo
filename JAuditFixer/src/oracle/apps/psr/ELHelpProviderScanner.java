@@ -1,7 +1,7 @@
 package oracle.apps.psr;
 
 
-import com.sun.org.apache.xerces.internal.util.URI;
+//import com.sun.org.apache.xerces.internal.util.URI;
 
 import java.io.BufferedWriter;
 import java.io.File;

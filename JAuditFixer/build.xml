@@ -87,7 +87,7 @@
 
 	<tstamp />
 
-		<property name="jarfilename" value="${ant.project.name}-${DSTAMP}${TSTAMP}.jar" />
+		<property name="jarfilename" value="${ant.project.name}.jar" />
 	<target name="jar" depends="compile" description="make jar file">
 		<jar jarfile="${jarfilename}" >
 			 <fileset dir="${classes}"/>
