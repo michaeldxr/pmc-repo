@@ -61,7 +61,12 @@
 
 	<echo>libs   ${libs}</echo>
 	<target name="init">
-		
+		<delete dir="classes/" />
+		<delete>
+			<fileset dir="." includes="*.jar"/>
+		</delete>
+		<delete file="./JarJAuditFixer.jar" />
+		<echo>delete eariler class and jar files.</echo>
 		<mkdir dir="${classes}" />
 	</target>
 
